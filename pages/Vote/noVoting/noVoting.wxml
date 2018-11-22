@@ -1,0 +1,74 @@
+<!--pages/Vote/noVoting/noVoting.wxml-->
+<view class="Initiator">
+  <view class='statIng'>
+    {{status}}
+  </view>
+  <text class="Title">
+    投票发起人:
+  </text>
+  <view class="information">
+    <image src="{{HeadPortrait}}"></image>
+    <view class="nameTime">
+      <text class='Name'>{{InitiatorName}}</text>
+      <text class='Time'>发起时间：{{InitiatorTime}}</text>
+    </view>
+  </view>
+  <view class='VoteMessage'>
+    <view class='VoteTitle'>
+      {{VoteTitle}}
+    </view>
+    <text class='Close'>[{{Close}}]</text>
+    <text class='orOpen'>[{{orOpen}}]</text>
+  </view>
+  <text class='desc'>{{desc}}</text>
+  <view class='optionsBox'>
+    <block wx:if="{{VoteImg}}">
+      <radio-group wx:if="{{Close === '单选'}}" class="radio-group" bindchange="radioChange">
+        <label class="radio imgBox" wx:key="key" wx:for="{{optionsImg}}">
+          <image src="{{item.opt_img}}" class='optionsImg'></image>
+          <view class='vote_imgTitle'>
+            <radio value="{{item.opt_title}}" color='red' />
+            <text class='optionsTitle'>{{item.opt_title}}</text>
+          </view>
+        </label>
+      </radio-group>
+      <checkbox-group wx:if="{{Close === '多选'}}" bindchange="checkboxChange">
+        <label class="checkbox imgBox" wx:for="{{optionsImg}}" wx:key="key">
+          <image src="{{item.opt_img}}" class='optionsImg'></image>
+          <view class='vote_imgTitle'>
+            <checkbox class='checkboxBtn' value="{{item.opt_title}}" color='red' />
+            <text class='optionsTitle'>{{item.opt_title}}</text>
+          </view>
+        </label>
+      </checkbox-group>
+    </block>
+    <block wx:if="{{VoteImg===false}}">
+      <radio-group wx:if="{{Close === '单选'}}" class="radio-group" bindchange="radioChange">
+        <label class="radio vote_text" wx:for="{{optionsImg}}" wx:key="key">
+          <radio value="{{item.opt_title}}" color='#ff444a' />
+          <text>{{item.opt_title}}</text>
+        </label>
+      </radio-group>
+      <checkbox-group wx:if="{{Close === '多选'}}" bindchange="checkboxChange">
+        <label class="checkbox vote_text" wx:for="{{optionsImg}}" wx:key="key">
+          <checkbox value="{{item.opt_title}}" color='#ff444a' />
+          <text>{{item.opt_title}}</text>
+        </label>
+      </checkbox-group>
+    </block>
+  </view>
+  <view class='endTime'>投票截止时间：
+    <text>{{endDate}}</text>
+    <text>{{endTime}}</text>
+  </view>
+  <button type='warn' class='OK' bindtap='Voted'>投票</button>
+  <view class='Forward'>
+    <image src="http://pcwebtest.ihxlife.com/website/image_x/zhuanfa.png"></image>
+    <text>转发至微信群</text>
+    <button open-type="share"></button>
+  </view>
+</view>
+<template name="optionsImg">
+
+
+</template>

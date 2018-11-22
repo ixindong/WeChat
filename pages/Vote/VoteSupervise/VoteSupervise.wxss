@@ -1,0 +1,194 @@
+/* pages/Vote/VoteSupervise/VoteSupervise.wxss */
+page{
+  background-color: #fafafa
+}
+.option{
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  margin-bottom: 40rpx;
+}
+.option ul{
+  width: 100%;
+  display: inline-block;
+  background-color: white;
+  border-top: 2rpx solid #f2f2f2;
+}
+.option ul li{
+  width: 30%;
+  float: left;
+  color: #898989;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  margin: 0 10%;
+}
+.option ul .act{
+  color: #ff444a;
+  border-bottom: 2rpx solid #ff444a
+}
+.SplitLine{
+  position: absolute;
+  width: 1px;
+  height: 74rpx;
+  top: 0;
+  left: 50%;
+  z-index: 100;
+  background: #959595;
+}
+.VoteBox{
+  width: 647rpx;
+  margin: 0 auto;
+  height: 820rpx;
+  overflow-y: auto;
+}
+.VoteBox ul{
+  display: block;
+  width: 100%;
+  padding-top: 10rpx;
+}
+.VoteBox ul li{
+  margin-bottom: 40rpx;
+  width: 100%;
+  height: 227rpx;
+  display: block;
+  position: relative;
+}
+.VoteBoxMain{
+  display: block;
+  padding-top: 30rpx;
+  position: absolute;
+  left: 0;
+  top:0;
+  z-index: 100;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+  border-radius: 5rpx;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0rpx 1rpx 1rpx 0rpx rgba(4, 0, 0, 0.11);
+  width: 100%;
+  height: 100%;
+}
+.Del{
+  border-radius: 5rpx;
+  font-size: 25rpx;
+  width: 102rpx;
+  height: 227rpx;
+  text-align: center;
+  color: #fff;
+  background: #ff444a;
+  line-height: 227rpx;
+  float: right;
+}
+.VoteBox ul li .HaveInHand{
+  border-radius: 5rpx;
+  background-color: rgb(243, 243, 243);
+  box-shadow: 0rpx 3rpx 3rpx 0rpx rgba(4, 0, 0, 0.44);
+  position: absolute;
+  width: 106rpx;
+  height: 35rpx;
+  top: -7rpx;
+  left: 10rpx;
+  text-align: center;
+  line-height: 35rpx;
+  color: #23b1dd;
+  font-size: 25rpx;
+}
+.VoteBox ul li .End{
+  border-radius: 5rpx;
+  background-color: rgb(243, 243, 243);
+  box-shadow: 0rpx 3rpx 3rpx 0rpx rgba(4, 0, 0, 0.44);
+  position: absolute;
+  width: 106rpx;
+  height: 35rpx;
+  top: -7rpx;
+  left: 10rpx;
+  text-align: center;
+  line-height: 35rpx;
+  color: #ff444a;
+  font-size: 25rpx;
+}
+.VoteBox ul li .HeadPortrait{
+  width: 127rpx;
+  height: 127rpx;
+  float: left;
+  margin-top: 34rpx;
+  margin-right: 54rpx;
+}
+.VoteBox ul li .Information{
+  float: left;
+  width: 447rpx;
+}
+.VoteBox ul li .Information .Title{
+  font-size: 30rpx;
+  color: #898989;
+  display: block;
+  margin-bottom: 19rpx;
+}
+.VoteBox ul li .Information .LittleLabel{
+  color: #898989;
+  font-size: 25rpx;
+  display: block;
+  overflow: hidden;
+}
+.VoteBox ul li .Information .LittleLabel text:nth-child(1){
+  margin-left: 0;
+}
+.VoteBox ul li .Information .LittleLabel text{
+  float: left;
+  margin-left: 20rpx;
+}
+.VoteBox ul li .Information .TheNumber{
+  color: #898989;
+  font-size: 25rpx;
+  margin-top: 40rpx;
+  display: block;
+}
+.LaunchVote{
+  width: 200rpx;
+  height: 59rpx;
+  border-radius: 25rpx;
+  background: #0e92e6;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 70rpx;
+  display: block;
+  line-height: 59rpx;
+  font-size: 28rpx;
+  position: fixed;
+  left: 272rpx;
+  bottom: 80rpx;
+}
+.LaunchVote image{
+  width: 54rpx;
+  height: 44rpx;
+  float: left;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+  margin-right: 10rpx;
+}
+.noVote{
+  width: 409rpx;
+  height: 211rpx;
+  margin: 0 auto;
+  margin-top: 190rpx;
+  margin-bottom: 86rpx;
+}
+.noVote image{
+  width: 100%;
+  height: 100%;
+}
+.noVoteText{
+  text-align: center;
+  width: 100%;
+  color: #898989;
+  font-size: 30rpx;
+  display: block;
+  margin-bottom: 170rpx;
+}
+.noVoteBu{
+  height: 75rpx;
+  line-height: 75rpx;
+  font-size: 35rpx;
+}

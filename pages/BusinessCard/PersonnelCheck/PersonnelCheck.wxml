@@ -1,0 +1,12 @@
+<!--pages/BusinessCard/PersonnelCheck/PersonnelCheck.wxml-->
+<view class="WxHeadphoto">
+  <image src="{{avatarUrl}}"></image>
+</view>
+<view class="CheckInput">
+  <input type='text' placeholder='请输入工号' bindinput='userIdInput'></input>
+   <input type='text' placeholder='请输入手机号' bindinput='PhoneInput'></input>
+   <!-- <text wx:if='{{ErrorShow}}'>未查询到您的工号信息，如有疑问请咨询95300</text>  -->
+</view>
+<view class="CheckButton">
+  <button type='warn' bindtap='submit'>确认</button>
+</view>

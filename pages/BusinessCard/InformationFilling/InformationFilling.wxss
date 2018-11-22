@@ -1,0 +1,225 @@
+/* pages/BusinessCard/InformationFilling/InformationFilling.wxss */
+
+.Template {
+  width: 100%;
+  height: 490rpx;
+  position: relative;
+  overflow: hidden;
+}
+
+page {
+  height: 100%;
+}
+
+.Template image {
+  width: 100%;
+  height: 100%;
+}
+
+.Template button {
+  width: 227rpx;
+  height: 75rpx;
+  line-height: 75rpx;
+  position: absolute;
+  top: 200rpx;
+  left: 260rpx;
+  border: none;
+  font-size: 27rpx;
+  background: rgba(255, 68, 74, 0.9);
+}
+
+.information {
+  width: 100%;
+  margin-top: 40rpx;
+}
+
+.information ul {
+  width: 100%;
+}
+
+.information li {
+  width: 100%;
+  margin-bottom: 40rpx;
+  font-size: 25rpx;
+  display: inline-block;
+  line-height: 27rpx;
+  padding-left: 30rpx;
+}
+
+.information li span {
+  width: 4rpx;
+  height: 27rpx;
+  float: left;
+  background: #ff444a;
+  margin-right: 10rpx;
+}
+
+.information label {
+  color: #898989;
+  float: left;
+  font-size: 30rpx;
+}
+
+.information text {
+  color: #898989;
+  float: left;
+}
+
+.information input {
+  float: left;
+  margin-top: -9rpx;
+  font-size: 30rpx;
+  color: #898989;
+}
+.selfIntroBox {
+  position: relative;
+}
+.information textarea {
+  height: 100rpx;
+  font-size: 30rpx;
+  color: #898989;
+  width: 60%;
+   line-height: 30rpx; 
+   float: left;
+  margin-top: 0rpx;
+  margin-left: 10rpx;
+  background-color: #f2f2f2;
+  display: block;
+  padding-top: -20rpx;
+}
+
+.CloseTemplate {
+  position: absolute;
+  padding-left: 30rpx;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  z-index: 100;
+  background: #fafafa;
+}
+
+.CloseTemplate ul {
+  display: block;
+  overflow: hidden;
+  margin-top: 40rpx;
+}
+
+.CloseTemplate li {
+  float: left;
+  width: 338rpx;
+  font-size: 30rpx;
+  color: #898989;
+  text-align: center;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+  position: relative;
+}
+
+.CloseTemplate li:nth-child(even) {
+  margin-right: 0;
+}
+
+.CloseTemplate image {
+  width: 342rpx;
+  height: 270rpx;
+  margin-top: 20rpx;
+  z-index: 10000;
+}
+
+.CloseTemplate li .Close {
+  position: absolute;
+  z-index: 100;
+  display: none;
+  top: 50rpx;
+  right: 5rpx;
+  width: 56rpx;
+  height: 56rpx;
+}
+
+.CloseTemplate li .TemplateCover {
+  position: absolute;
+  z-index: 101;
+  width: 342rpx;
+  height: 270rpx;
+  background: rgba(250, 250, 250, 0.5);
+  top: 62rpx;
+  left: 0;
+}
+
+.CloseTemplate li .TemplateCover image {
+  width: 56rpx;
+  height: 56rpx;
+  position: absolute;
+  z-index: 100;
+  right: 8rpx;
+  top: -11rpx;
+}
+
+.CloseTemplate li .TemplateAdd {
+  width: 54rpx;
+  height: 54rpx;
+  display: block;
+  margin: 110rpx 0 0 140rpx;
+}
+
+.CloseTemplate .Add {
+  width: 342rpx;
+  height: 270rpx;
+  margin-top: 8rpx;
+  border: 1px solid #a1a1a1;
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.CloseTemplate .CheckButton {
+  position: absolute;
+  left: 33rpx;
+  padding: 100rpx 0rpx;
+  margin-top: 0;
+  background-color: #fafafa;
+}
+
+.radio-group {
+  display: inline-block;
+  margin-top: -10px;
+}
+
+.templateInput {
+  height: 80rpx;
+  margin-bottom: 40rpx;
+  border: 2rpx solid rgba(0, 0, 0, 0.2);
+}
+
+.radioGroup {
+  margin-top: 0;
+  width: 690rpx;
+}
+
+.radio {
+  float: left;
+  width: 345rpx;
+  position: relative;
+}
+
+.radio radio {
+  position: absolute;
+  top: 100rpx;
+  right: 0;
+}
+.radio image {
+  display: inline-block;
+}
+.edior{
+  width: 30rpx;
+  height: 30rpx;
+}
+.button{
+  margin-left: 0 !important;
+}

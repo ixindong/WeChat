@@ -1,0 +1,57 @@
+<!--pages/Vote/LaunchVote/LaunchVote.wxml-->
+<view class='Main'>
+  <view class='backgroundColor'>
+     <view class='theme'>
+      <input type='text' bindinput='nameInput' placeholder='投票标题(15字以内)' maxlength='15'></input>
+    </view> 
+    <view class='describe'>
+      <textarea bindblur='descInput' placeholder='填写投票描述，让更多的人参与投票……'></textarea>
+    </view>
+  </view>
+
+  <view class='option'>
+    <ul class="optionBu">
+      <li class="{{selected?'act':'default'}}" bindtap="selected">文字模式</li>
+      <li class="{{selected1?'act':'default'}}" bindtap="selected1">图文模式</li>
+    </ul>
+    <ul class="reduce">
+      <li wx:for="{{templateText}}" data="{{item}}" wx:key="key">
+        <image src="{{item.SrcIcon}}" bindtap='reduce' data-index='{{item.NumText-1}}'></image>
+        <image class="addPhoto" data-index='{{index}}' src='{{arrImg[index]}}' hidden='{{selected}}' data-id="{{item.NumText-1}}" bindtap='chooseImg'>{{item.text}}</image>
+        <input type='text' data-id="{{item.NumText-1}}" bindinput='optionInput' placeholder='选项{{index + 1}}(20个字以内)'></input>
+      </li>
+      <view class='AddOptions' bindtap='add'>
+        <image src="http://pcwebtest.ihxlife.com/website/image_x/Addoption.png"></image>
+        <text>添加选项</text>
+      </view>
+    </ul>
+    <view class='OrClose'>
+      <text style='margin-right:30rpx;'>可 多 选 :</text>
+      <switch color='#ff444a' bindchange='switchOption'></switch>
+    </view>
+    <view class='OrClose'>
+      <text>允许匿名:</text>
+      <switch color='#ff444a' bindchange='Anonymity'></switch>
+    </view>
+    <view class='Deadline'>
+      <text>截止时间:</text>
+      <picker mode="time" value="{{time}}" start="{{startTime}}" end="23:59" bindchange="bindTimeChange">
+        <view class="picker">
+          <text class='Box'>{{time}}</text>
+        </view>
+      </picker>
+      <picker mode="date" value="{{date}}" start="{{date}}" end="2030-09-01" bindchange="bindDateChange">
+        <view class="picker">
+          <text class='Box'>{{date}}</text>
+        </view>
+      </picker>
+    </view>
+    <view class='Types'>
+      <text>类　　型:</text>
+      <view class="{{selected3?'acts':'default'}}" bindtap="selected3">指定</view>
+      <view class="{{selected2?'acts':'default'}}" bindtap="selected2">公开</view>
+      <image class='info' src='../../image/question.png' catchtap='showInfo'></image>
+    </view>
+  </view>
+  <button class='submitBtn' type="warn" bindtap='playVote'>发布</button>
+</view>

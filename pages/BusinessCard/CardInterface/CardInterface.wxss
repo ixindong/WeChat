@@ -1,0 +1,117 @@
+/* pages/BusinessCard/CardInterface/ CardInterface.wxss */
+.HxCard{
+  width: 690rpx;
+  margin: 0 auto;
+  margin-top: 105rpx;
+}
+.HxCardBox{
+  border-radius: 5rpx;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0rpx 3rpx 5rpx 0rpx rgba(4, 0, 0, 0.3);
+  width: 647rpx;
+  height: 227rpx;
+  margin: 0 auto;
+  padding-left: 43rpx;
+  padding-right: 20rpx;
+  box-sizing: border-box;
+}
+.HxCardBox .Top{
+  padding-top: 20rpx;
+  display: inline-block;
+  width: 100%;
+}
+.HxCardBox .Top .Information{
+  float: left;
+}
+.HxCardBox .Top .Information .Name{
+  font-size: 35rpx;
+  color: #898989;
+  display: inline-block;
+}
+.HxCardBox .Top .Information .Job{
+  color: #898989;
+  font-size: 25rpx;
+  display: block;
+}
+.HxCardBox .Top image{
+  width: 79rpx;
+  height: 79rpx;
+  float: right;
+}
+.HxCardBox .Bottom{
+  width: 100%;
+  margin-top: 37rpx;
+  display: inline-block;
+}
+.HxCardBox .Bottom .phone{
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.HxCardBox .Bottom .phone .phoneIcon{
+  width: 17rpx;
+  height: 30rpx;
+  float: left;
+}
+.HxCardBox .Bottom .phone text{
+  font-size: 25rpx;
+  color: #898989;
+  left: 30rpx;
+  float: left;
+  position: absolute;
+  top: 0;
+  width: 210rpx;
+}
+.HxCardBox .Bottom .phone .PhoneRedIcon{
+  width: 29rpx;
+  height: 29rpx;
+  margin-top: 5rpx;
+  float: left;
+  margin-left: 190rpx;
+}
+.HxCardBox .Bottom .companyName{
+  display: inline-block;
+  width: 100%;
+}
+.HxCardBox .Bottom .companyName image{
+  width: 24rpx;
+  height: 28rpx;
+  float: left;
+  margin-right: 20rpx;
+}
+.HxCardBox .Bottom .companyName text{
+  font-size: 25rpx;
+  color: #898989;
+  float: left;
+}
+.HxCard button{
+  margin-top: 50rpx;
+  height: 75rpx;
+  line-height: 75rpx;
+}
+.ordinaryCard{
+  margin-top: 153rpx;
+  margin-bottom: 80rpx;
+}
+.CardBu{
+  width: 200rpx;
+  height: 59rpx;
+  background: #0e92e6;
+  border-radius: 25rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  display: block;
+}
+.CardBu image{
+  float: left;
+  width: 44rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  margin-left: 40rpx;
+  margin-top: 9rpx;
+}
+.CardBu text{
+  font-size: 28rpx;
+  color: #fff;
+  margin-left: 15rpx;
+}

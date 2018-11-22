@@ -1,0 +1,33 @@
+<!--pages/CardClip/CardClip.wxml-->
+<view class='Search'>
+  <image src="http://pcwebtest.ihxlife.com/website/image_x/Magnifier.png"></image>
+  <input type='text' bindinput='inputValue' placeholder='请输入姓名或公司'></input>
+</view>
+<view class="CardList">
+  <ul>
+    <li wx:for="{{cardList}}" bindtap='cardDetail' wx:key="key" data="{{item}}" data-index="{{item}}" bindtap='cardDetail'>
+      <view class="Top">
+        <view class="imformation">
+          <text class='name' data-index="{{item}}">{{item.card_name}}</text>
+          <text class='job' data-index="{{item}}">{{item.card_post}}</text>
+        </view>
+        <image src="{{item.wx_headimg}}"></image>
+      </view>
+      <view class="Bottom">
+        <view class='phone'>
+          <image src="http://pcwebtest.ihxlife.com/website/image_x/phoneIcon.png" class='phoneIcon'></image>
+          <text data-text='{{item.card_tel}}' bindtap='playPhone'>{{item.card_tel}}</text>
+          <image src="http://pcwebtest.ihxlife.com/website/image_x/PhoneRedIcon.png" class='PhoneRedIcon'></image>
+        </view>
+        <view class='companyName'>
+          <image src="http://pcwebtest.ihxlife.com/website/image_x/ConpanyIcon.png"></image>
+          <text data-index="{{item}}" bindtap='cardDetail'>{{item.card_company}}</text>
+        </view>
+      </view>
+    </li>
+  </ul>
+  <view wx:if="{{cardList.length == 0}}" class='imageInfo'>
+    <image src='../../image/noCard.png'></image>
+    <text>名片夹还没有名片哦~</text>
+  </view>
+</view>

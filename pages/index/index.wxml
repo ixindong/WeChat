@@ -1,0 +1,12 @@
+<view class="Main">
+  <view class='Entrance'>
+    <view>
+      <image src='../image/BusinessCard.png' bindtap="BusinessCard"></image>
+    </view>
+    <text class='fontWeight'>·华夏名片</text>
+<text>绑定工号，一键生成华夏员工专属名片，公司介绍、热销产品，应有尽有，更有多套模板任你选。</text>
+<text class='fontWeight'>·普通名片</text>
+<text>不是华夏员工？创建一张普通名片，帮你轻松应对各种社交场合。
+赶快去制作你的社交法宝吧！</text>
+</view>
+</view>

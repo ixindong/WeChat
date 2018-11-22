@@ -1,0 +1,111 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.6.6",
+	"appid": "wx621d3abefc4fd4ec",
+	"projectname": "%E5%8D%8E%E5%A4%8F%E5%B8%AE",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 1,
+			"list": [
+				{
+					"id": -1,
+					"name": "CardIndex",
+					"pathName": "pages/BusinessCard/BusinessCardIndex/BusinessCardIndex",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "PersonnelCheck",
+					"pathName": "pages/BusinessCard/PersonnelCheck/PersonnelCheck",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "InformationFilling",
+					"pathName": "pages/BusinessCard/InformationFilling/InformationFilling",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "VoteIndex",
+					"pathName": "pages/Vote/VoteIndex/VoteIndex",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "HaveCard",
+					"pathName": "pages/BusinessCard/HaveCard/HaveCard",
+					"query": ""
+				},
+				{
+					"id": 6,
+					"name": "CardClip",
+					"pathName": "pages/BusinessCard/CardClip/CardClip",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "CardInterface",
+					"pathName": "pages/BusinessCard/CardInterface/ CardInterface",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "VoteSupervise",
+					"pathName": "pages/Vote/VoteSupervise/VoteSupervise",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "ceshi",
+					"pathName": "pages/ce shi/ceshi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "LaunchVote",
+					"pathName": "pages/Vote/LaunchVote/LaunchVote",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "noVoting",
+					"pathName": "pages/Vote/noVoting/noVoting",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "Voted",
+					"pathName": "pages/Vote/Voted/Voted",
+					"query": ""
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,224 @@
+/* pages/Vote/Voted/Voted.wxss */
+
+.Initiator{
+  width: 100%;
+  display: inline-block;
+  margin-top: 23rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.Initiator .Title{
+  font-size: 32rpx;
+  color: #898989;
+  height: 30rpx;
+  line-height: 30rpx;
+  display: inline-block;
+}
+.information{
+  padding-top: 27rpx;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 2rpx solid #cccccc;
+  padding-bottom: 20rpx;
+}
+.information image{
+  width: 100rpx;
+  height: 100rpx;
+  float: left;
+  margin-right: 35rpx;
+}
+.nameTime{
+  float: left;
+}
+.nameTime .Name{
+  color: #898989;
+  font-size: 32rpx;
+  display: block;
+}
+.nameTime .Time{
+  font-size: 24rpx;
+  color: #898989;
+  display: block;
+  margin-top: 10rpx;
+}
+.VoteTitle{
+  width: 690rpx;
+  height: 67rpx;
+  background: #ff444a;
+  color: #fff;
+  line-height: 67rpx;
+  text-align: center;
+  float: left;
+  border-radius: 10rpx;
+  font-size: 45rpx;
+}
+.VoteMessage{
+  display: inline-block;
+  margin-top: 40rpx;
+}
+.Close{
+  font-size: 36rpx;
+  color: #ff444a;
+  float: left;
+  display: block;
+  padding-top: 40rpx;
+  margin-left: 13rpx;
+  width: 100rpx;
+}
+.orOpen{
+  font-size: 36rpx;
+  color: #ff444a;
+  float: left;
+  display: block;
+  padding-top: 40rpx;
+  margin-left: 13rpx;
+  width: 100rpx;
+}
+.endTime{
+  display: inline-block;
+  font-size: 30rpx;
+  color: #898989;
+  width: 100%;
+  text-align: right;
+}
+.endTime text{
+  margin-left: 20rpx;
+}
+.endTime text:nth-child(odd){
+  margin: 0;
+}
+.OK{
+  width: 100%;
+  height: 75rpx;
+  line-height: 75rpx;
+  font-size: 35rpx;
+  margin-bottom: 56rpx;
+}
+.Forward{
+  width: 235rpx;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50rpx;
+}
+.Forward image{
+  width: 44rpx;
+  height: 38rpx;
+  float: left;
+  margin-right: 20rpx;
+}
+.Forward text{
+  font-size: 28rpx;
+  color: #bbdef5;
+  float: left;
+}
+.Forward button{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.optionsState{
+  width: 100%;
+  display: block;
+}
+.optionsState ul{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+.optionsState li{
+  display: inline-block;
+  margin-bottom: 40rpx;
+  height: 100rpx;
+}
+.optionsState li .ProgressBar{
+  width: 100%;
+  height: 40rpx;
+  position: relative;
+  /* border-radius: 12rpx; */
+  /* border: 1px solid #d0d0d0; */
+  float: left;
+  margin-left: 20rpx;
+}
+.ProgressBarIng{
+  height: 26rpx;
+  background: #ff444a;
+  position: absolute;
+  left: -1rpx;
+  top: -1rpx;
+  width: 20%;
+  border-radius: 12rpx;
+}
+.optionsState li .ProgressBar .Title{
+  /* position: absolute;
+  left: 10rpx;
+  top: -40rpx; */
+  font-size: 30rpx;
+  color: #898989;
+}
+.optionsState li .ProgressBar .manNum{
+  font-size: 15rpx;
+  color: #898989;
+  /* position: absolute;
+  right: 0;
+  top: -40rpx; */
+}
+.optionsState li .ProgressBar .manNum text{
+  font-size: 28rpx;
+}
+.VoteManNum{
+  margin-top: 20rpx;
+  display: block;
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+.VoteManNum .Title{
+  font-size: 30rpx;
+  color: #898989;
+  margin-bottom: 26rpx;
+  display: inline-block;
+}
+.VoteManNum ul{
+  width: 100%;
+  display: inline-block;
+}
+.VoteManNum li{
+  width: 54rpx;
+  height: 54rpx;
+  float: left;
+  margin-right: 20rpx;
+}
+.VoteManNum li image{
+  width: 100%;
+  height: 100%;
+}
+.desc {
+  display: block;
+  color: #898989;
+  padding: 40rpx 0;
+}
+.statIng {
+  float: right;
+  color: #24b1dd;
+  border: 2rpx solid #24b1dd;
+  padding: 6rpx 10rpx;
+  border-radius: 10rpx;
+}
+.optionsLeft{
+  float: left;
+  width: 100rpx;
+  height: 120rpx;
+}
+.optionsRight{
+  float: right;
+  width: 544rpx;
+}
+.optionsImg{
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 10rpx;
+}

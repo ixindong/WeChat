@@ -1,0 +1,136 @@
+/* pages/CardClip/CardClip.wxss */
+.Search {
+  height: 60rpx;
+  line-height: 60rpx;
+  border-bottom: 1px solid #f2f2f2;
+  display: block;
+  margin-bottom: 20rpx;
+}
+
+.Search image {
+  width: 30rpx;
+  height: 30rpx;
+  float: left;
+  margin-top: 10rpx;
+}
+
+.Search input {
+  font-size: 30rpx;
+  float: left;
+  margin-left: 20rpx;
+  width: 80%;
+}
+
+page {
+  padding: 30rpx;
+  width: auto !important;
+}
+
+.CardList {
+  position: relative;
+  width: 650rpx;
+}
+
+.CardList ul {
+  display: block;
+  width: 100%;
+}
+
+.CardList ul li {
+  border-radius: 5rpx;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0rpx 3rpx 5rpx 0rpx rgba(4, 0, 0, 0.3);
+  width: 100%;
+  display: block;
+  margin-bottom: 20rpx;
+  padding-left: 40rpx;
+}
+.CardList ul li .Top{
+  display: inline-block;
+  width: 100%;
+  padding-top: 40rpx;
+}
+.CardList ul li .Top .imformation{
+  width: 75%;
+  float: left;
+}
+.CardList ul li .Top .imformation .name{
+  font-size: 35rpx;
+  color: #898989;
+}
+.CardList ul li .Top .imformation .job{
+  font-size: 25rpx;
+  color: #898989;
+}
+.CardList ul li .Top .imformation text{
+  width: 100%;
+  display: block;
+}
+.CardList ul li .Top image{
+  float: right;
+  width: 79rpx;
+  height: 79rpx;
+  margin-right: 20rpx;
+}
+.CardList ul li .Bottom{
+  width: 100%;
+  margin-top: 37rpx;
+  display: inline-block;
+}
+.CardList ul li .Bottom .phone{
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.CardList ul li .Bottom .phone .phoneIcon{
+  width: 17rpx;
+  height: 30rpx;
+  float: left;
+}
+.CardList ul li .Bottom .phone text{
+  font-size: 25rpx;
+  color: #898989;
+  left: 40rpx;
+  float: left;
+  position: absolute;
+  top: 0;
+  width: 210rpx;
+}
+.CardList ul li .Bottom .phone .PhoneRedIcon{
+  width: 29rpx;
+  height: 29rpx;
+  margin-top: 5rpx;
+  float: left;
+  margin-left: 190rpx;
+}
+.CardList ul li .Bottom .companyName{
+  display: inline-block;
+  width: 100%;
+}
+.CardList ul li .Bottom .companyName image{
+  width: 24rpx;
+  height: 28rpx;
+  float: left;
+  margin-right: 20rpx;
+}
+.CardList ul li .Bottom .companyName text{
+  font-size: 25rpx;
+  color: #898989;
+  float: left;
+}
+.imageInfo{
+  width: 750rpx;
+  height: 300rpx;
+  margin-top: 100rpx;
+}
+ .imageInfo image{
+   width: 750rpx;
+  height: 300rpx;
+} 
+.imageInfo text{
+  width: 750rpx;
+  display: block;
+  text-align: center;
+  color: #898989;
+  font-size: 30rpx;
+}

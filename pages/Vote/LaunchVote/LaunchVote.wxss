@@ -1,0 +1,214 @@
+/* pages/Vote/LaunchVote/LaunchVote.wxss */
+.Main {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 30rpx;
+  color: #898989;
+  background-color: #fafafa;
+}
+
+.backgroundColor {
+  background-color: #fefefe;
+}
+
+.theme {
+  height: 60rpx;
+  border-bottom: 2rpx solid #f6f6f6;
+  margin: 10rpx 30rpx;
+}
+
+.theme input {
+  width: 100%;
+  font-size: 30rpx;
+}
+
+.describe {
+  width: 100%;
+  height: 200rpx;
+  border-bottom: 2rpx solid white;
+  padding: 0 20rpx;
+}
+
+.describe textarea {
+  width: 100%;
+  height: 100%;
+  margin-top: 20rpx;
+}
+
+.option {
+  width: 100%;
+  background-color: white;
+  margin-top: 20rpx;
+}
+
+.option .Title {
+  display: block;
+  margin-bottom: 30rpx;
+}
+
+.optionBu {
+  display: inline-block;
+  margin: 30rpx 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.optionBu li {
+  width: 200rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  float: left;
+  color: #898989;
+  border-radius: 5rpx;
+  box-sizing: border-box;
+  background-color: #e2e2e2;
+  margin:0 87rpx;
+}
+
+.act {
+  color: #fff !important;
+  background: #E64340;
+  /* box-shadow: inset 0px 3px 9px 0px rgba(4, 0, 0, 0.75); */
+  line-height: 60rpx !important;
+  background-color: #ff444a !important;
+}
+
+.reduce {
+  width: 100%;
+  display: inline-block;
+  margin: 0 20rpx;
+}
+
+.reduce li ,.AddOptions,.Deadline,.Types{
+  display: inline-block;
+  width: 100%;
+  height: 100rpx;
+  border-bottom: 2rpx solid #f6f6f6;
+}
+
+.reduce image {
+  float: left;
+  margin-right: 30rpx;
+  width: 33rpx;
+  height: 33rpx;
+  margin-top: 30rpx;
+}
+
+.reduce input {
+  width: 446rpx;
+  height: 40rpx;
+  line-height: 100rpx;
+  float: left;
+  margin-top: 20rpx;
+}
+
+.addPhoto{
+  width: 80rpx !important;
+  height: 80rpx !important;
+  background: #e2e2e2;
+  color: #898989;
+  line-height: 43rpx;
+  text-align: center;
+  display: block;
+  margin-top: 0 !important;
+}
+
+/* .AddOptions {
+  display: inline-block;
+} */
+
+.AddOptions image {
+  width: 33rpx;
+  height: 33rpx;
+  float: left;
+  margin-right: 30rpx;
+}
+
+.AddOptions text {
+  color: #4ec0e3;
+  float: left;
+  line-height: 100rpx;
+}
+
+.OrClose {
+  display: block;
+  height: 100rpx;
+  border-bottom: 2rpx solid #f6f6f6;
+  margin: 0 20rpx;
+}
+
+.OrClose text {
+  float: left;
+  line-height: 100rpx;
+}
+
+.OrClose switch {
+  float: right;
+  margin-top: 10rpx;
+}
+.OrClose:nth-of-type(2) switch{
+  margin-top: 15rpx;
+}
+.Deadline{
+  margin: 0 20rpx;
+}
+.Deadline text {
+  float: left;
+  line-height: 100rpx;
+}
+
+.Deadline picker {
+  height: 45rpx;
+  float: right;
+  margin-right: 50rpx;
+}
+
+.Types {
+  display: inline-block;
+  margin: 0 20rpx;
+}
+
+.Types text {
+  float: left;
+  line-height: 100rpx;
+}
+
+.Types view {
+  height: 45rpx;
+  float: right;
+  line-height: 45rpx;
+  padding: 0 30rpx;
+  background: #fff;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+  background-color: #e2e2e2;
+  color: #898989;
+}
+.Types view:first-of-type{
+  margin-right: 50rpx !important;
+}
+.Types .acts {
+  background: #E64340 !important;
+  color: #fff !important;
+}
+.Types icon{
+  float: right;
+  margin-top: 20rpx;
+  margin-right: 30rpx;
+}
+.submitBtn{
+  width: 710rpx;
+  margin:30rpx auto;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.info{
+  width: 40rpx;
+  height: 40rpx;
+  float: right;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+  background-color: #E64340;
+  border-radius: 50%;
+}

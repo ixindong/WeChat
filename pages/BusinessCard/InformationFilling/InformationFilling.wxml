@@ -1,0 +1,76 @@
+<!--pages/BusinessCard/InformationFilling/InformationFilling.wxml-->
+ <view class="Template">
+  <image src="{{tempBomImg}}"></image>
+  <button type='warn' bindtap="CloseTemplate">选择模版</button>
+</view> 
+<view class='information'>
+  <ul>
+    <li>
+      <span></span>
+      <label>姓　　名：</label>
+      <input type='text' placeholder='请输入姓名' disabled='{{disabled}}' value='{{name}}' bindblur='nameInput' />
+    </li>
+    <li>
+      <span></span>
+      <label>联系电话：</label>
+      <input focus='{{mobileFocus}}' type='number' value='{{mobile}}' placeholder='请输入联系电话' bindinput='mobileInput' />
+      <image bindtap='ediorPhone' wx:if="{{cardType == 'HX'}}" class='edior' src='../../image/edior.png'></image>
+    </li>
+    <li>
+      <span></span>
+      <label>公　　司：</label>
+       <input type='text' value='{{company}}'  disabled='{{disabled}}' placeholder='请输入公司名称' bindinput='companyInput' /> 
+    </li>
+    <li>
+      <span></span>
+      <label>职　　位：</label>
+      <input placeholder='(选填)' value='{{position}}' bindinput='positionInput'></input>
+    </li>
+    <li>
+      <span></span>
+      <label>邮　　箱：</label>
+      <input placeholder='(选填)' value='{{email}}' bindinput='emailInput'></input>
+    </li>
+    <li class='selfIntroBox'>
+      <span></span>
+      <label>自我介绍：</label>
+      <textarea bindtap='selfTap' hidden='{{showView}}' placeholder='(选填)' value='{{self_introduce}}' bindinput='selfIntroInput' maxlength="100" />
+    </li>
+  </ul>
+  <view class='CheckButton' style='margin-top:20rpx;'>
+    <button hidden='{{showView}}' type='warn' disabled='{{disabled1}}' bindtap='submit'>提交</button>
+  </view>
+</view>
+ <view class="CloseTemplate hide{{showView?'show':''}}">
+  <ul>
+    <radio-group class="radio-group radioGroup" bindchange="radioChange">
+      <label hidden="{{cardType !== 'HX'}}" class="radio" wx:for="{{templateText}}" wx:key="key">
+        <view>
+          <radio data-imgSrc='{{item.template_src}}' value="{{item.template_id}}" color='#ff444a' />
+        <text>{{item.template_name}}</text>
+        </view>
+        <view class='complate-img'>
+          <image src="{{item.template_src}}"></image>
+        </view>
+      </label>
+      <label wx:if="{{cardType === 'ordinary' && item.template_type === 'ordinary'}}" class="radio" wx:for="{{templateText}}" wx:key="key">
+        <view>
+          <radio data-imgSrc='{{item.template_src}}' value="{{item.template_id}}" color='#ff444a' />
+        <text>{{item.template_name}}</text>
+        </view>
+        <view class='complate-img'>
+          <image src="{{item.template_src}}"></image>
+        </view>
+      </label>
+      <li>
+      <text>自定义模版</text>
+      <view class="Add">
+        <image src="http://pcwebtest.ihxlife.com/website/image_x/TemplateAdd.png" class="TemplateAdd" bindtap="TemplateAdd"></image>
+      </view>
+    </li>
+    </radio-group>
+    <view class="CheckButton button">
+    <button type='warn' bindtap='confirm'>确认</button>
+  </view>
+  </ul>
+</view> 

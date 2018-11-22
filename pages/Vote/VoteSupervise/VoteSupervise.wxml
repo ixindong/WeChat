@@ -1,0 +1,77 @@
+<!--pages/Vote/VoteSupervise/VoteSupervise.wxml-->
+<view class="option">
+  <ul>
+    <li class="{{selected?'act':'default'}}" bindtap="selected">我参与的</li>
+    <li class="{{selected1?'act':'default'}}" bindtap="selected1">我发起的</li>
+  </ul>
+</view>
+<view class="{{selected?'show':'hidden'}}">
+  <view class="VoteBox">
+    <ul>
+      <li wx:if="{{Information.length>0}}" wx:for="{{Information}}" wx:key="key">
+        <view class='VoteBoxMain' data-id='{{item}}' bindtap='DetailVote' style="{{item.txtStyle}}" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}">
+          <view class="HaveInHand {{item.status == '进行中'?'show':'hidden'}}">进行中</view>
+          <view class="End {{item.status == '进行中'?'hidden':'show'}}">已完结</view>
+          <image src="{{item.headimg}}" class='HeadPortrait'></image>
+          <view class='Information'>
+            <text class='Title'>{{item.ac_motif}}</text>
+            <text class='LittleLabel'>
+            <text>[{{item.option_type == 'O' ? '单选' : '多选'}}]</text>
+            <text>[{{item.is_public === 'Y' ? '公开' : '指定'}}]</text>
+            </text>
+            <text class='TheNumber'>{{item.partCount}}人参与投票</text>
+          </view>
+        </view>
+        <view class='Del' catchtap='Del' data-id='{{item}}' data-index="{{index}}">
+          删 除
+        </view>
+        <view class='LaunchVote' bindtap='LaunchVote'>
+          <image src="http://pcwebtest.ihxlife.com/website/image_x/VoteIconn.png"></image>
+          <text>发起投票</text>
+        </view>
+      </li>
+      <li wx:if="{{Information.length==0}}">
+        <view class="noVote">
+          <image src="http://pcwebtest.ihxlife.com/website/image_x/noVote.png"></image>
+        </view>
+        <text class='noVoteText'>您还没有发起过投票哦，快来发起吧！</text>
+        <button type='warn' class='noVoteBu' bindtap='LaunchVote'>发起投票</button>
+      </li>
+    </ul>
+  </view>
+</view>
+<view class="{{selected1?'show':'hidden'}}">
+  <view class="VoteBox">
+    <ul>
+      <li wx:if="{{MyInformation.length>0}}" wx:for="{{MyInformation}}" wx:key="key">
+        <view class='VoteBoxMain' data-id='{{item}}' bindtap='MyDetailVote' style="{{item.txtStyle}}" bindtouchstart="myTouchS" bindtouchmove="myTouchM" bindtouchend="myTouchE" data-index="{{index}}">
+          <view class="HaveInHand {{item.status == '进行中'?'show':'hidden'}}">进行中</view>
+          <view class="End {{item.status == '进行中'?'hidden':'show'}}">已完结</view>
+          <image src="{{item.headimg}}" class='HeadPortrait'></image>
+          <view class='Information'>
+            <text class='Title'>{{item.ac_motif}}</text>
+            <text class='LittleLabel'>
+            <text>[{{item.option_type == 'O' ? '单选' : '多选'}}]</text>
+            <text>[{{item.is_public === 'Y' ? '公开' : '指定'}}]</text>
+            </text>
+            <text class='TheNumber'>{{item.partCount}}人参与投票</text>
+          </view>
+        </view>
+        <view class='Del' catchtap='MyDel' data-id='{{item}}' data-index="{{index}}">
+          删 除
+        </view>
+        <view class='LaunchVote' bindtap='LaunchVote'>
+          <image src="http://pcwebtest.ihxlife.com/website/image_x/VoteIconn.png"></image>
+          <text>发起投票</text>
+        </view>
+      </li>
+      <li wx:if="{{MyInformation.length<1}}">
+        <view class="noVote">
+          <image src="http://pcwebtest.ihxlife.com/website/image_x/noVote.png"></image>
+        </view>
+        <text class='noVoteText'>您还没有发起过投票哦，快来发起吧！</text>
+        <button type='warn' class='noVoteBu' bindtap='LaunchVote'>发起投票</button>
+      </li>
+    </ul>
+  </view>
+</view>

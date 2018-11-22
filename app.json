@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/BusinessCard/BusinessCardIndex/BusinessCardIndex",
+    "pages/BusinessCard/PersonnelCheck/PersonnelCheck",
+    "pages/BusinessCard/InformationFilling/InformationFilling",
+    "pages/Vote/VoteIndex/VoteIndex",
+    "pages/BusinessCard/HaveCard/HaveCard",
+    "pages/BusinessCard/CardClip/CardClip",
+    "pages/BusinessCard/CardInterface/CardInterface",
+    "pages/Vote/VoteSupervise/VoteSupervise",
+    "pages/Vote/LaunchVote/LaunchVote",
+    "pages/Vote/noVoting/noVoting",
+    "pages/Vote/noVotings/noVoting",
+    "pages/Vote/Voted/Voted",
+    "pages/Vote/Voteds/Voted"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "华夏帮",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "color": "#898989",
+    "borderStyle": "white",
+    "selectedColor": "#ff444a",
+    "list": [
+      {
+        "selectedIconPath": "pages/image/MyCardR.png",
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/image/WxBu.png",
+        "text": "微名片"
+      },
+      {
+        "selectedIconPath": "pages/image/WtpSelected.png",
+        "pagePath": "pages/Vote/VoteIndex/VoteIndex",
+        "iconPath": "pages/image/WxVote.png",
+        "text": "微投票"
+      }
+    ]
+  }
+}

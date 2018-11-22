@@ -1,0 +1,59 @@
+<!--pages/Vote/Voted/Voted.wxml-->
+<view class="Initiator">
+  <text class='statIng'>{{status}}</text>
+  <text class="Title">
+    投票发起人:
+  </text>
+  <view class="information">
+    <image src="{{HeadPortrait}}"></image>
+    <view class="nameTime">
+      <text class='Name'>{{InitiatorName}}</text>
+      <text class='Time'>发起时间：{{InitiatorTime}}</text>
+    </view>
+  </view>
+  <view class='VoteMessage'>
+    <view class='VoteTitle'>
+      {{VoteTitle}}
+    </view>
+    <text class='Close'>[{{Close}}]</text>
+    <text class='orOpen'>[{{orOpen}}]</text>
+  </view>
+  <text class='desc'>{{desc}}</text>
+  <view class='optionsState'>
+    <ul>
+      <li wx:key="key" wx:for="{{optionsNum}}">
+        <view class='optionsLeft' wx:if="{{VoteImg}}">
+          <image class='optionsImg' src='{{item.opt_img}}'></image>
+        </view>
+        <view class='optionsRight'>
+          <view class='ProgressBar'>
+            <text class='Title'>{{item.opt_title}}</text>
+            <view class='manNum'>
+              <text decode="{{true}}">{{item.partCount}}票&nbsp;&nbsp;&nbsp;&nbsp;</text>
+              <text>{{item.percentage}}</text>
+            </view>
+            <progress class='progress' percent="{{item.partCount/countVote * 100}}" stroke-width="12" color='red' />
+          </view>
+        </view>
+      </li>
+    </ul>
+  </view>
+  <view class='endTime'>投票截止时间：
+    <text>{{endDate}}</text>
+    <text>{{endTime}}</text>
+  </view>
+  <view class='VoteManNum'>
+    <text class='Title'>已有{{VoteManNum}}人参与投票</text>
+    <ul>
+      <li wx:for="{{VoteManImg}}" wx:key="key">
+        <image src="{{item.VoteManImgSrc}}"></image>
+      </li>
+    </ul>
+  </view>
+  <button type='warn' hidden='{{selfVote}}' class='OK' bindtap='Voteing'>我也来发起投票</button>
+  <view class='Forward'>
+    <image src="http://pcwebtest.ihxlife.com/website/image_x/zhuanfa.png"></image>
+    <text>转发至微信群</text>
+    <button open-type="share"></button>
+  </view>
+</view>

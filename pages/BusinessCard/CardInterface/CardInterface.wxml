@@ -1,0 +1,51 @@
+<!--pages/BusinessCard/CardInterface/CardInterface.wxml-->
+<view class='HxCard'>
+  <view class="HxCardBox">
+    <view class="Top">
+      <view class='Information'>
+        <text class="Name">天培育</text>
+        <text class='Job'>华夏保险北京分公司</text>
+      </view>
+      <image src="{{HeadPortrait}}"></image>
+    </view>
+    <view class="Bottom">
+        <view class='phone'>
+          <image src="http://pcwebtest.ihxlife.com/website/image_x/phoneIcon.png" class='phoneIcon'></image>
+          <text data-text="{{phoneNumber}}" bindtap='playPhone'>{{phoneNumber}}</text>
+          <image src="http://pcwebtest.ihxlife.com/website/image_x/PhoneRedIcon.png" class='PhoneRedIcon'></image>
+        </view>
+        <view class='companyName'>
+          <image src="http://pcwebtest.ihxlife.com/website/image_x//ConpanyIcon.png"></image>
+          <text>华夏保险 北京分公司</text>
+        </view>
+      </view>
+  </view>
+  <button type='warn'>编辑华夏名片</button>
+</view>
+<view class='HxCard ordinaryCard'>
+  <view class="HxCardBox">
+    <view class="Top">
+      <view class='Information'>
+        <text class="Name">天培育</text>
+        <text class='Job'>华夏保险北京分公司</text>
+      </view>
+      <image src="{{HeadPortrait}}"></image>
+    </view>
+    <view class="Bottom">
+        <view class='phone'>
+          <image src="http://pcwebtest.ihxlife.com/website/image_x/phoneIcon.png" class='phoneIcon'></image>
+          <text data-text="{{phoneNumber}}" bindtap='playPhone'>{{phoneNumber}}</text>
+          <image src="http://pcwebtest.ihxlife.com/website/image_x/PhoneRedIcon.png" class='PhoneRedIcon'></image>
+        </view>
+        <view class='companyName'>
+          <image src="http://pcwebtest.ihxlife.com/website/image_x/ConpanyIcon.png"></image>
+          <text>华夏保险 北京分公司</text>
+        </view>
+      </view>
+  </view>
+  <button type='warn'>编辑普通名片</button>
+</view>
+<view class='CardBu'>
+<image src='http://pcwebtest.ihxlife.com/website/image_x/CardIcon.png'></image>
+<text bindtap='collectCard'>名片夹</text>
+</view>

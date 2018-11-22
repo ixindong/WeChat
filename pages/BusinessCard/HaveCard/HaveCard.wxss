@@ -1,0 +1,392 @@
+/* pages/BusinessCard/HaveCard/HaveCard.wxss */
+page {
+  background-color: white;
+}
+.option {
+  width: 100%;
+  height: 170rpx;
+  color: #898989;
+  font-size: 33rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #eff3f2;
+}
+.option ul {
+  display: block;
+  width: 100%;
+  height: 80rpx;
+  background-color: white;
+}
+
+.option li {
+  width: 33.3%;
+  float: left;
+  height: 60rpx;
+  border-right: 1px dashed #bfbfbf;
+  text-align: center;
+  line-height: 60rpx;
+  font-weight: bold;
+  box-sizing: border-box;
+  margin-top: 10rpx;
+}
+
+.option li:last-of-type {
+  border: none;
+}
+
+.option li image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 5rpx;
+  float: left;
+  margin-left: 30rpx;
+}
+
+.option .act {
+  color: #ff444a;
+}
+.show {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+
+.PersonalData {
+  width: 100%;
+}
+
+.banner {
+  width: 710rpx;
+  height: 380rpx;
+  box-shadow: 7rpx 8rpx 15rpx rgba(0, 0, 0, 0.3);
+  margin: auto;
+}
+
+.banner image {
+  width: 100%;
+  height: 100%;
+}
+
+.PersonalData .PersonalDataText {
+  margin-top: 15rpx;
+  padding-left: 30rpx;
+}
+
+.PersonalData .PersonalDataText ul {
+  width: 100%;
+  display: block;
+}
+
+.PersonalData .PersonalDataText ul li {
+  padding-left: 15rpx;
+  line-height: 30rpx;
+  display: block;
+  color: #898989;
+  font-size: 25rpx;
+  border-bottom: 2rpx dashed #dedede;
+  height: 60rpx;
+  margin-top: 10rpx;
+}
+
+.PersonalData .PersonalDataText ul li:last-of-type {
+  border: none;
+}
+
+.PersonalData .PersonalDataText ul li image {
+  width: 40rpx;
+  height: 40rpx;
+  float: left;
+  margin-right: 16rpx;
+  margin-top: 5rpx;
+}
+
+.PersonalData .PersonalDataText ul li text {
+  width: 420rpx;
+  float: left;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  color: #777;
+}
+
+.PersonalData .PersonalDataText ul li .selfInfo {
+  height: 120rpx;
+}
+
+.PersonalData .PersonalDataText ul li label {
+  float: left;
+  font-size: 30rpx;
+  color: #333;
+  line-height: 50rpx;
+}
+
+.phoneBox {
+  position: relative;
+}
+
+.phoneIcon {
+  position: absolute;
+  left: 450rpx;
+  top: 0;
+}
+
+.PersonalDataButton {
+  width: 590rpx;
+  margin: 0 auto;
+  margin-top: 50rpx;
+  display: block;
+  position: relative;
+}
+
+.PersonalDataButton view {
+  height: 54rpx;
+  border-radius: 5rpx;
+  font-size: 30rpx;
+  line-height: 54rpx;
+  text-align: center;
+  background: #ff444a;
+  color: #fff;
+}
+
+.PersonalDataButton view:nth-last-child(1) {
+  color: white;
+  background: #fff;
+  border-radius: 5rpx;
+  box-sizing: border-box;
+  background-color: #ff444a;
+}
+
+.Segmenting {
+  height: 54rpx;
+  width: 1px !important;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background: #959595 !important;
+}
+
+.CompanyIntroduction {
+  width: 100%;
+  display: block;
+  margin: 20rpx 0;
+}
+
+.CompanyIntroduction dl {
+  width: 100%;
+  display: block;
+  padding-left: 50rpx;
+  height: 600rpx;
+  overflow-y: auto;
+}
+
+.CompanyIntroduction dt {
+  color: #898989;
+  font-size: 25rpx;
+  margin-bottom: 30rpx;
+  width: 100%;
+  font-weight: bolder;
+}
+
+.CompanyIntroduction dt::before {
+  content: '●';
+  color: #ff444a;
+  margin-right: 15rpx;
+}
+
+.CompanyIntroduction dd {
+  font-size: 25rpx;
+  color: #898989;
+  width: 600rpx;
+  display: block;
+  padding-left: 37rpx;
+  line-height: 45rpx;
+  margin-bottom: 30rpx;
+}
+
+/* 热销产品 */
+
+.HotPr {
+  padding-top: 120rpx;
+  background-color: #f2f2f2;
+  margin-bottom: 190rpx;
+  overflow-y: scroll;
+}
+
+.HotPrBox {
+  overflow: hidden;
+  margin: 20rpx;
+  position: relative;
+  background-color: white;
+  box-shadow: 2rpx 2rpx 3rpx #8f8c8d;
+}
+
+.HotPrImg {
+  width: 200rpx;
+  height: 200rpx;
+  display: inline-block;
+  margin: 0 6rpx;
+  float: left;
+}
+
+.HotPrTitle {
+  font-size: 32rpx;
+  float: left;
+}
+
+.HotPrDesc {
+  font-size: 28rpx;
+  float: left;
+  width: 70%;
+  color: #a5a5a5;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+}
+
+.green {
+  border-top: 50px solid #57b92c;
+}
+
+.yellow {
+  border-top: 50px solid #dfad00;
+}
+
+.HotPrType {
+  position: absolute;
+  right: -3px;
+  top: 8px;
+  transform: rotate(45deg);
+  color: white;
+  font-size: 12px;
+}
+
+.phoneText {
+  background-color: #fff;
+  height: 100rpx;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 20rpx;
+}
+
+.phoneText text {
+  font-size: 30rpx;
+  color: #959595;
+  display: block;
+  text-align: center;
+}
+
+.phoneText .headImg {
+  width: 78rpx;
+  height: 78rpx;
+  border-radius: 10rpx;
+  border: 2rpx solid #c4c4c4;
+  box-shadow: 2rpx 2rpx 2rpx 2rpx rgba(219, 219, 219, 0.5);
+  position: absolute;
+  top: 0rpx;
+  left: 60rpx;
+}
+
+.phoneText .phoneImg {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 15rpx;
+  right: 60rpx;
+}
+
+.shareText {
+  color: #898989;
+  font-size: 30rpx;
+  text-align: center;
+  clear: both;
+  display: block;
+  padding: 30rpx 0;
+}
+
+.collect {
+  clear: both;
+  text-align: center;
+  width: 200rpx;
+  line-height: 48rpx;
+  padding: 10rpx 40rpx;
+  margin: auto;
+  border: 2rpx solid #ff444a;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: center;
+  margin-top: 40rpx;
+}
+
+.collect image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+
+.collect text {
+  font-size: 30rpx;
+  color: #ff444a;
+}
+
+.createCard {
+  margin-top: 30rpx;
+  margin-bottom: 40rpx;
+}
+
+.share-box {
+  height: 90rpx;
+  width: 100%;
+}
+
+.share-box .share {
+  text-align: center;
+  font-size: 32rpx;
+  margin-top: 15rpx;
+  width: 40%;
+  margin-left: 30%;
+}
+
+.share-box .share image {
+  width: 28rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+
+.share-box .edior {
+  float: right;
+  margin-top: -40rpx;
+  margin-right: 20rpx;
+  height: 80rpx;
+}
+
+.share-box .edior image {
+  width: 24rpx;
+  height: 24rpx;
+  margin-right: 10rpx;
+}
+
+.share-box .edior text {
+  color: #ff444a;
+}
+.share{
+  position: relative;
+}
+.share button,.edior button{
+  width: 50%;
+  height: 30rpx;
+  position: absolute;
+  top: 0rpx;
+  left: 25%;
+  opacity: 0;
+}

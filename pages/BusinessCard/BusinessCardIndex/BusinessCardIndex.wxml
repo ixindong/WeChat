@@ -1,0 +1,69 @@
+<!--pages/BusinessCard/BusinessCardIndex.wxml-->
+<view class="CardIndexBox">
+  <view wx:if="{{hxCartList.length == 0}}">
+    <view class="CardIndexImg">
+      <image src="http://pcwebtest.ihxlife.com/website/image_x/HxCards.png"></image>
+    </view>
+    <text>我是华夏员工，快去创建华夏专属名片！</text>
+  </view>
+  <view data-item='{{item}}' class="HxCardBox" wx:for='{{hxCartList}}' bindtap='cardDetail' wx:key='key' data="{{item}}">
+    <view class="Top">
+      <view class='Information'>
+        <text class="Name">{{item.card_name}}</text>
+        <text class='Job'>{{item.card_post}}</text>
+      </view>
+      <image src="{{item.wx_headimg}}"></image>
+    </view>
+    <view class="Bottom">
+        <view class='phone'>
+          <image src="http://pcwebtest.ihxlife.com/website/image_x/phoneIcon.png" class='phoneIcon'></image>
+          <text data-text="{{item.card_tel}}" catchtap='playPhone'>{{item.card_tel}}</text>
+          <image src="http://pcwebtest.ihxlife.com/website/image_x/PhoneRedIcon.png" class='PhoneRedIcon'></image>
+        </view>
+        <view class='companyName'>
+          <image src="http://pcwebtest.ihxlife.com/website/image_x/ConpanyIcon.png"></image>
+          <text>{{item.card_company}}</text>
+        </view>
+      </view>
+  </view>
+    <button wx:if='{{hxCartList.length == 0}}' type="warn" bindtap='HXNewCart'>创建华夏名片</button>  
+  <button data-type='HX' wx:if='{{hxCartList.length > 0}}' type="warn" bindtap='editorDetail'>编辑华夏名片</button>
+</view>
+<view class="CardIndexBox" style='margin-bottom:0;padding-top:0'>
+  <view wx:if='{{ordinaryCartList.length == 0}}'>
+    <view class="CardIndexImg">
+      <image src="http://pcwebtest.ihxlife.com/website/image_x/HxCards.png"></image>
+    </view>
+    <text>您还没有普通名片哦，赶快来做一张吧！！</text>
+  </view>
+
+
+<view class="HxCardBox" data-item='{{item}}' bindtap='cardDetail' wx:for='{{ordinaryCartList}}' wx:key='key' data="{{item}}">
+    <view class="Top">
+      <view class='Information'>
+        <text class="Name">{{item.card_name}}</text>
+        <text class='Job'>{{item.card_post}}</text>
+      </view>
+      <image src="{{item.wx_headimg}}"></image>
+    </view>
+    <view class="Bottom">
+        <view class='phone'>
+          <image src="http://pcwebtest.ihxlife.com/website/image_x/phoneIcon.png" class='phoneIcon'></image>
+          <text data-text="{{item.card_tel}}" catchtap='playPhone'>{{item.card_tel}}</text>
+          <image src="http://pcwebtest.ihxlife.com/website/image_x/PhoneRedIcon.png" class='PhoneRedIcon'></image>
+        </view>
+        <view class='companyName'>
+          <image src="http://pcwebtest.ihxlife.com/website/image_x/ConpanyIcon.png"></image>
+          <text>{{item.card_company}}</text>
+        </view>
+      </view>
+  </view>
+
+    <button wx:if='{{ordinaryCartList.length == 0}}' type="warn" bindtap='ordinaryNewCart'>创建普通名片</button>  
+  <button data-type='ordinary' wx:if='{{ordinaryCartList.length > 0}}' type="warn" bindtap='editorDetail'>编辑普通名片</button>
+</view>
+
+<view class='CardBu' bindtap='collectCard'>
+  <image src='http://pcwebtest.ihxlife.com/website/image_x/CardIcon.png'></image>
+  <text>名片夹</text>
+</view>

@@ -1,0 +1,12 @@
+<!--pages/Vote/VoteIndex.wxml-->
+<view class="Main">
+  <view class='Entrance'>
+  <view>
+    <image src='http://pcwebtest.ihxlife.com/website/image_x/VoteBg.png' bindtap="Vote"></image>
+  </view>
+    <text>生活、工作中，常有意见不统一？
+华夏帮-微投票帮你忙！
+文字投票、图文投票，轻松创建、一键转发，在微信中完成投票变得如此简单！
+赶快去发起你的投票吧~</text>
+  </view>
+</view>

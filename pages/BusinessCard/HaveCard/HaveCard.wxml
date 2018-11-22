@@ -1,0 +1,132 @@
+<!--pages/BusinessCard/HaveCard/HaveCard.wxml-->
+<view class="{{selected?'show':'hidden'}} PersonalData">
+  <view class='banner'>
+     <image src="{{tempBomImg}}"></image> 
+  </view>
+  <view class="PersonalDataText">
+    <ul>
+      <li>
+        <image src='../../image/haveCard1.png'></image>
+        <label>姓　　名：</label>
+        <text>{{name}}</text>
+      </li>
+      <li class='phoneBox'>
+      <image src='../../image/haveCard2.png'></image>
+        <label>联系电话：</label>
+        <text catchtap='takePhone'>{{mobile}}</text>
+        <image catchtap='takePhone' class='phoneIcon' src='http://pcwebtest.ihxlife.com/website/image_x/PhoneRedIcon.png'></image>
+      </li>
+      <li>
+        <image src='../../image/haveCard3.png'></image>
+        <label>公　　司：</label>
+        <text>{{company}}</text>
+      </li>
+      <li>
+        <image src='../../image/haveCard4.png'></image>
+        <label>职　　位：</label>
+        <text>{{position}}</text>
+      </li>
+      <li>
+        <image src='../../image/haveCard5.png'></image>
+        <label>邮　　箱：</label>
+        <text>{{email}}</text>
+      </li>
+      <li>
+        <image src='../../image/haveCard6.png'></image>
+        <label>自我介绍：</label>
+        <text class='selfInfo'>{{self_introduce}}</text>
+      </li>
+    </ul>
+  </view>
+  <!-- <view class="PersonalDataButton" wx:if='{{selfCard}}'>
+    <view bindtap='editCard'>编辑名片</view>
+    <view class='Segmenting'></view>
+    <view bindtap='createOrdinaryCard'>创建普通名片</view>
+  </view> -->
+  <!-- <view class='shareText' wx:if='{{selfCard}}'>点击右上角分享你的名片</view> -->
+  <!-- <view class='collect' bindtap='collectTop' wx:if='{{!selfCard}}'>
+    <image src='../../image/share.png'></image>
+    <text>{{isCollect}}</text>
+  </view> -->
+  <!-- <view class="PersonalDataButton createCard" wx:if='{{!selfCard}}'>
+    <view catchtap='createCard'>创建名片</view>
+  </view> -->
+</view>
+<view class="{{selected1?'show':'hidden'}}" hidden="{{cardType === 'ordinary'}}">
+  <view class='banner'>
+    <image src="http://pcwebtest.ihxlife.com/website/image_x/CardBanner2.jpeg"></image>
+  </view>
+  <view class="CompanyIntroduction">
+    <dl>
+      <dt>公司简介</dt>
+      <dd>{{companyInfo}}</dd>
+      <dt>企业文化</dt>
+      <dd>{{enterprise}}</dd>
+      <dt>产品创先</dt>
+      <dd>{{product}}</dd>
+      <dt>公益华夏</dt>
+      <dd>{{publicWelfare}}</dd>
+    </dl>
+
+  </view>
+</view>
+<view class="{{selected2?'show':'hidden'}} HotPr" hidden="{{cardType === 'ordinary'}}">
+<scroll-view scroll-y='false' style='padding-bottom:170rpx'>
+  <view class='HotPrBox' wx:for="{{productList}}" wx:key="key">
+      <image class='HotPrImg' src='{{item.imgSrc}}'></image>
+      <text class='HotPrTitle'>{{item.title}}</text>
+      <text class='HotPrDesc'>{{item.desc1}}</text>
+      <text class='HotPrDesc'>{{item.desc2}}</text>
+      <text class='HotPrDesc'>{{item.desc3}}</text>
+      <div class="triangle {{item.classStr}}"></div>
+      <text class='HotPrType'>{{item.types}}</text>
+    </view>
+</scroll-view>
+  <view class='phoneText'>
+    <image class='headImg' src='{{headImg}}'></image>
+    <text>致电咨询</text>
+    <text>{{mobile}}</text>
+    <image bindtap='takePhone' class='phoneImg' src='../../image/haveCardPhone.png'></image>
+  </view>
+</view>
+<view class="option">
+  <view hidden="{{cardType === 'ordinary'}}">
+    <ul>
+      <li class="{{selected?'act':'default'}}" bindtap="selected">
+        <image hidden='{{!selected}}' src='../../image/person-active.png'></image>
+        <image hidden='{{selected}}' src='../../image/person.png'></image>
+        个人资料
+      </li>
+      <li class="{{selected1?'act':'default'}}" bindtap="selected1">
+        <image hidden='{{!selected1}}' src='../../image/company-active.png'></image>
+        <image hidden='{{selected1}}' src='../../image/company.png'></image>
+        公司简介
+      </li>
+      <li class="{{selected2?'act':'default'}}" bindtap="selected2">
+        <image hidden='{{!selected2}}' src='../../image/product-active.png'></image>
+        <image hidden='{{selected2}}' src='../../image/product.png'></image>
+        热销产品</li>
+    </ul>
+  </view>
+  <view class='share-box' wx:if='{{selfCard}}'>
+    <view class='share'>
+      <image src='../../image/share.png'></image>
+      <text>点击分享您的名片</text>
+      <button open-type="share"></button>
+    </view>
+    <view class='edior' bindtap='editCard'>
+      <image src='../../image/edior.png'></image>
+      <text>编辑名片</text>
+    </view>
+  </view>
+  <view class='share-box' wx:if='{{!selfCard}}'>
+    <view class='share'>
+      <image src='../../image/collection.png'></image>
+      <text bindtap='collectTop' >{{isCollect}}</text>
+    </view>
+    <view class='edior' bindtap='createCard'>
+      <image src='../../image/edior.png'></image>
+      <text>创建名片</text>
+    </view>
+  </view>
+</view>
